@@ -1,4 +1,5 @@
-# mp4merger [![Build Status](https://travis-ci.org/EdFabre/mp4merger.png?branch=master)](https://travis-ci.org/EdFabre/mp4merger)
+# mp4merger
+[![Build Status](https://travis-ci.org/EdFabre/mp4merger.png?branch=master)](https://travis-ci.org/EdFabre/mp4merger)
 
 This module is used to merge two mp4 files together.
 

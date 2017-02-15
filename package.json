@@ -1,5 +1,5 @@
 {
-  "name": "mp4merger",
+  "name": "mp4mergerv2",
   "version": "1.0.0",
   "description": "This module is used to merge two mp4 files together.",
   "main": "joiner.js",
@@ -23,5 +23,8 @@
   ],
   "author": "Ed Fabre",
   "license": "ISC",
-  "homepage": "https://github.com/EdFabre/mp4merger#readme"
+  "homepage": "https://github.com/EdFabre/mp4merger#readme",
+  "bugs": {
+    "url": "https://github.com/EdFabre/mp4merger/issues"
+  }
 }
