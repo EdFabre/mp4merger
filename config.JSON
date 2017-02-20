@@ -1,0 +1,46 @@
+{
+  "TEST" : {
+    "path": "C:/Users/enfabre/Documents/Programming/NODEJS/MP4Merger",
+    "out": "C:/Users/enfabre/Documents/Programming/NODEJS/MP4Merger/"
+  },
+  "SURV440" : {
+    "path": "F:/Shared/JPSM Recordings/Jodi's Uploads/SURV440_SurvMeth617",
+    "out": "E:/FTP/Media Imports/surv440sp17/"
+  },
+  "SURV616" : {
+    "path": "F:/Shared/JPSM Recordings/Jodi's Uploads/SURV616_SurvMeth686",
+    "out": "E:/FTP/Media Imports/surv616sp17/"
+  },
+  "SURV625" : {
+    "path": "F:/Shared/JPSM Recordings/Jodi's Uploads/SURV625_SurvMeth625",
+    "out": "E:/FTP/Media Imports/surv625sp17/"
+  },
+  "SURV630" : {
+    "path": "F:/Shared/JPSM Recordings/Jodi's Uploads/SURV630_SurvMeth630",
+    "out": "E:/FTP/Media Imports/surv630sp17/"
+  },
+  "SURV630_S2" : {
+    "path": "F:/Shared/JPSM Recordings/Jodi's Uploads/SURV630_SurvMeth630_Session2",
+    "out": "E:/FTP/Media Imports/surv630sp17/"
+  },
+  "SURV721" : {
+    "path": "F:/Shared/JPSM Recordings/Jodi's Uploads/SURV721_SurvMeth721",
+    "out": "E:/FTP/Media Imports/surv721sp17/"
+  },
+  "SURV742" : {
+    "path": "F:/Shared/JPSM Recordings/Jodi's Uploads/SURV742_SurvMeth742",
+    "out": "E:/FTP/Media Imports/surv742sp17/"
+  },
+  "SURV744" : {
+    "path": "F:/Shared/JPSM Recordings/Jodi's Uploads/SURV744_SurvMeth744",
+    "out": "E:/FTP/Media Imports/surv744sp17/"
+  },
+  "SURV829" : {
+    "path": "F:/Shared/JPSM Recordings/Jodi's Uploads/SURV829_SurvMeth891",
+    "out": "E:/FTP/Media Imports/surv829sp17/"
+  },
+  "SURV895" : {
+    "path": "F:/Shared/JPSM Recordings/Jodi's Uploads/SURV699I_SurvMeth895",
+    "out": "E:/FTP/Media Imports/surv895sp17/"
+  }
+}

@@ -5,7 +5,9 @@ var fs = require('fs-extra');
 module.exports = class Media {
 
   /**
-   * This method merges the video files within a directory to a single file.
+   * This method merges the video files within a directory to a single file. the
+   * program determines which file is part 2 by searching for the text part in
+   * filename.
    *
    * @param  {[type]} pathToVideos /path/to/files/dir
    * @param  {[type]} outDir       /path/to/output/dir
@@ -22,13 +24,13 @@ module.exports = class Media {
         var input1,
           input2;
 
-        if (sol[0].includes("Part 1")) {
-          input1 = sol[1];
-          input2 = sol[0];
+        if (sol[0].toUpperCase.includes("PART")) {
+          input1 = `${pathToVideos}${sol[1]}`;
+          input2 = `${pathToVideos}${sol[0]}`;
           outDir = `${outDir}${input1.match(rgx)[0].toUpperCase()}.mp4`
         } else {
-          input1 = sol[0];
-          input2 = sol[1];
+          input1 = `${pathToVideos}${sol[0]}`;
+          input2 = `${pathToVideos}${sol[1]}`;
           outDir = `${outDir}${input1.match(rgx)[0].toUpperCase()}.mp4`
         }
 
@@ -75,17 +77,20 @@ module.exports = class Media {
 function search(path) {
   return new Promise(function(resolve, reject) {
     fs.readdir(path, function(err, items) {
-      // console.log(items);
-      var results = [];
-      for (var i = 0; i < items.length; i++) {
-        if (items[i].includes(".mp4")) {
-          results.push(items[i]);
-        }
-      }
-      if (results.length == 2) {
-        resolve(results);
+      if (err) {
+        reject(err);
       } else {
-        reject(`Found ${results.length} video's within directory. Cannot complete merge.`);
+        var results = [];
+        for (var i = 0; i < items.length; i++) {
+          if (items[i].includes(".mp4")) {
+            results.push(items[i]);
+          }
+        }
+        if (results.length == 2) {
+          resolve(results);
+        } else {
+          reject(`Found ${results.length} video's within directory. Cannot complete merge.`);
+        }
       }
     });
   });
